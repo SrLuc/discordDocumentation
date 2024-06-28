@@ -1,0 +1,35 @@
+Quero um texto para colocar na documentação e que descreva a estrutura de um servirdor chamado Softex Labs.
+
+O servidor tem mais 20 categorias, +150 canais e 111 cargos disponíveis.
+
+Atualmente o servidor conta com 20 categorias, sendo as principais e mais ativas : Lobby, Softex Labs, Formação Acelerada em Programação(FAP), Cursos, Lista de Tarefas, Bolsistas, Estação de Monitoramento Modular (EMM), ADM.
+
+Nesse contexo, os canais que mais se descatacam de acordo com sua categoria e sua funcionalidade são:
+Lobby: Verificação de novos usuarios do servidor, boas vindas, e logs de entrada e saida do servidor.
+Softex Labs: divulgações de novos eventos, webinar, paletras e oficinas.
+FAP: Geral, Equipe do FAP, Turmas de frontend e backend isso inclui canais de texto e voz, residência e os arquivados.
+Lista de Tarefas: Tarefas que são designadas para os bolsistas pelo coordenador ou por eles mesmos.
+Bolsitas: um canal onde os bolsistas de diferentes projetos podem se encontrar e também há um lista de tarefas.
+EMM: canais voltados para o desenvolvimento do EMM, onde há frontend, backend, hardware, statioms e lista de tarefas.
+ADM: Acompanhamento dos alunos do FAP, secreataria, Assuntos gerais relacionados ao FAP na parte administrativa e o ADM.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+O servidor Softex Labs é uma plataforma robusta e organizada que suporta diversas atividades dentro da Softex. Com mais de 20 categorias e mais de 150 canais disponíveis, além de 111 cargos específicos, o servidor é projetado para facilitar a comunicação e colaboração entre os membros da comunidade.
+
+Entre as categorias principais e mais ativas estão:
+
+Lobby: Canal dedicado à verificação de novos usuários, boas-vindas e registro de atividades de entrada e saída.
+
+Softex Labs: Foco em divulgações de eventos como webinars, palestras e oficinas.
+
+Formação Acelerada em Programação (FAP): Inclui canais gerais, equipes, turmas de frontend e backend, residência e arquivos relacionados.
+
+Lista de Tarefas: Gerenciamento das tarefas atribuídas aos bolsistas pela coordenação ou pelos próprios membros.
+
+Bolsistas: Comunidade para bolsistas de diferentes projetos, com espaço dedicado para interação e gestão de tarefas.
+
+Estação de Monitoramento Modular (EMM): Focado no desenvolvimento de frontend, backend, hardware, estações e gestão de tarefas específicas.
+
+ADM: Gestão administrativa relacionada ao acompanhamento dos alunos, secretaria e assuntos gerais administrativos do FAP.

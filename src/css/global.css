@@ -1,0 +1,14 @@
+.strongText {
+  font-weight: bold;
+}
+
+.bgGradient {
+  background-color: #dc7c2c;
+  background-image: linear-gradient(62deg, #dc7c2c 0%, #ecbc94 100%);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.styledText {
+  font-size: 20px;
+}
