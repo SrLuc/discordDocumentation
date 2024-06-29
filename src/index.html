@@ -1,649 +1,1001 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Softex Labs Documentation | Discord</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-okaidia.min.css"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Softex Labs Documentation | Discord</title>
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-okaidia.min.css" />
-  <link rel="stylesheet" href="./css/global.css" />
-</head>
-
-<body>
-  <!--STATUS PAGE-->
-  <div class="loader" id="docsLoader" role="status">
-    <div class="spinner-border text-primary" role="status">
-      <span class="visually-hidden">Loading...</span>
+  <body>
+    <!--STATUS PAGE-->
+    <div class="loader" id="docsLoader" role="status">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
-  </div>
 
-  <!--I DONT NOW -->
-  <nav class="docs-navbar d-lg-none bg-white sticky-top" id="docsNavbar">
-    <div class="container-md d-flex align-items-center justify-content-between h-100">
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img class="me-2" src="./assets/icons/discordia2.png" alt="Discord Logo" width="40px" height="40px" />
-        <h5 class="mb-0">Softex Labs Discord</h5>
-      </a>
-      <button class="btn border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#docsSidebar"
-        aria-controls="docsSidebar">
-        <i class="uil uil-subject fs-1 lh-sm"></i>
-      </button>
-    </div>
-  </nav>
-
-  <!--SIDEBAR-->
-  <div class="d-flex">
-    <aside class="docs-sidebar offcanvas-lg offcanvas-start vh-100 bg-white d-flex flex-column" id="docsSidebar">
-      <div class="offcanvas-header d-flex">
+    <!--I DONT NOW -->
+    <nav class="docs-navbar d-lg-none bg-white sticky-top" id="docsNavbar">
+      <div
+        class="container-md d-flex align-items-center justify-content-between h-100"
+      >
         <a class="navbar-brand d-flex align-items-center" href="/">
-          <img class="me-2" src="./assets/icons/discordia2.png" alt="Discord Logo" width="40px" height="40px" />
+          <img
+            class="me-2"
+            src="./assets/icons/discordia2.png"
+            alt="Discord Logo"
+            width="40px"
+            height="40px"
+          />
           <h5 class="mb-0">Softex Labs Discord</h5>
         </a>
-        <button class="btn-close d-md-none me-1 opacity-25" type="button" data-bs-dismiss="offcanvas"
-          data-bs-target="#docsSidebar" aria-label="Close Sidebar"></button>
+        <button
+          class="btn border-0 p-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#docsSidebar"
+          aria-controls="docsSidebar"
+        >
+          <i class="uil uil-subject fs-1 lh-sm"></i>
+        </button>
       </div>
-      <div class="offcanvas-body flex-grow-1 p-3">
-        <nav class="docs-nav w-100" id="docsMenu">
-          <ul class="nav flex-column">
+    </nav>
 
-          </ul>
-        </nav>
-      </div>
-      <div class="offcanvas-footer p-3">
-        <a class="btn btn-primary w-100" href="https://fap.softexrecife.org.br/" target="_blank">Formação Acelerada em
-          Programação</a>
-      </div>
-    </aside>
+    <!--SIDEBAR-->
+    <div class="d-flex">
+      <aside
+        class="docs-sidebar offcanvas-lg offcanvas-start vh-100 bg-white d-flex flex-column"
+        id="docsSidebar"
+      >
+        <div class="offcanvas-header d-flex">
+          <a class="navbar-brand d-flex align-items-center" href="/">
+            <img
+              class="me-2"
+              src="./assets/icons/discordia2.png"
+              alt="Discord Logo"
+              width="40px"
+              height="40px"
+            />
+            <h5 class="mb-0">Softex Labs Discord</h5>
+          </a>
+          <button
+            class="btn-close d-md-none me-1 opacity-25"
+            type="button"
+            data-bs-dismiss="offcanvas"
+            data-bs-target="#docsSidebar"
+            aria-label="Close Sidebar"
+          ></button>
+        </div>
+        <div class="offcanvas-body flex-grow-1 p-3">
+          <nav class="docs-nav w-100" id="docsMenu">
+            <ul class="nav flex-column"></ul>
+          </nav>
+        </div>
+        <div class="offcanvas-footer p-3">
+          <a
+            class="btn btn-primary w-100"
+            href="https://fap.softexrecife.org.br/"
+            target="_blank"
+            >Formação Acelerada em Programação</a
+          >
+        </div>
+      </aside>
 
-    <!--MAIN CONTENT-->
-    <main class="docs-content position-relative w-100">
-      <!--SVG -->
-      <svg class="bg-gradient-bulb-left position-fixed top-0" width="655px" height="1025px" viewBox="0 0 655 1025"
-        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <rect id="path-rtd5uzew3f-1" x="0" y="0" width="655" height="1025"></rect>
-          <radialGradient cx="50%" cy="53.2372883%" fx="50%" fy="53.2372883%" r="44.5431888%"
-            id="radialGradient-rtd5uzew3f-3">
-            <stop stop-color="#dc7c2c" offset="30%"></stop>
-            <stop stop-color="#dc7c2c" stop-opacity="0" offset="100%"></stop>
-          </radialGradient>
-        </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Desktop-HD" transform="translate(-300.000000, 0.000000)">
-            <g id="Oval" transform="translate(300.000000, 0.000000)">
-              <mask id="mask-rtd5uzew3f-2" fill="white">
-                <use xlink:href="#path-rtd5uzew3f-1"></use>
-              </mask>
-              <g id="Mask"></g>
-              <circle fill-opacity="0.14" fill="url(#radialGradient-rtd5uzew3f-3)" mask="url(#mask-rtd5uzew3f-2)"
-                cx="-101.5" cy="227.5" r="470"></circle>
+      <!--MAIN CONTENT-->
+      <main class="docs-content position-relative w-100">
+        <!--SVG -->
+        <svg
+          class="bg-gradient-bulb-left position-fixed top-0"
+          width="655px"
+          height="1025px"
+          viewBox="0 0 655 1025"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs>
+            <rect
+              id="path-rtd5uzew3f-1"
+              x="0"
+              y="0"
+              width="655"
+              height="1025"
+            ></rect>
+            <radialGradient
+              cx="50%"
+              cy="53.2372883%"
+              fx="50%"
+              fy="53.2372883%"
+              r="44.5431888%"
+              id="radialGradient-rtd5uzew3f-3"
+            >
+              <stop stop-color="#dc7c2c" offset="30%"></stop>
+              <stop stop-color="#dc7c2c" stop-opacity="0" offset="100%"></stop>
+            </radialGradient>
+          </defs>
+          <g
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g id="Desktop-HD" transform="translate(-300.000000, 0.000000)">
+              <g id="Oval" transform="translate(300.000000, 0.000000)">
+                <mask id="mask-rtd5uzew3f-2" fill="white">
+                  <use xlink:href="#path-rtd5uzew3f-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <circle
+                  fill-opacity="0.14"
+                  fill="url(#radialGradient-rtd5uzew3f-3)"
+                  mask="url(#mask-rtd5uzew3f-2)"
+                  cx="-101.5"
+                  cy="227.5"
+                  r="470"
+                ></circle>
+              </g>
             </g>
           </g>
-        </g>
-      </svg>
+        </svg>
 
-      <!--FIRST TITLE-->
-      <div class="container-md col-lg-10 col-xl-8 col-xxl-6" data-bs-spy="scroll" data-bs-target="#docsMenu"
-        data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -70%" tabindex="0">
-        <!--HEADER-->
-        <header class="section" id="docsHeader">
-          <h1 class="mt-2 mt-sm-5 mb-3">
-            Documentação do Servidor Discord Softex Labs
-          </h1>
-          <!--INPUT TO SEARCH-->
-          <div>
-            <div class="form-group position-relative p-0 mb-3">
-              <input class="form-control z-1" id="docsSearch" type="text"
-                placeholder="Escreva um tópico para encontrá-lo no site" aria-label="Search in documentation" />
-              <i class="uil uil-search text-muted opacity-75 fs-5 position-absolute end-0 top-0 z-2 mt-2 me-3"></i>
+        <!--FIRST TITLE-->
+        <div
+          class="container-md col-lg-10 col-xl-8 col-xxl-6"
+          data-bs-spy="scroll"
+          data-bs-target="#docsMenu"
+          data-bs-smooth-scroll="true"
+          data-bs-root-margin="0px 0px -70%"
+          tabindex="0"
+        >
+          <!--HEADER-->
+          <header class="section" id="docsHeader">
+            <h1 class="mt-2 mt-sm-5 mb-3">
+              Documentação do Servidor Discord Softex Labs
+            </h1>
+            <!--INPUT TO SEARCH-->
+            <div>
+              <div class="form-group position-relative p-0 mb-3">
+                <input
+                  class="form-control z-1"
+                  id="docsSearch"
+                  type="text"
+                  placeholder="Escreva um tópico para encontrá-lo no site"
+                  aria-label="Search in documentation"
+                />
+                <i
+                  class="uil uil-search text-muted opacity-75 fs-5 position-absolute end-0 top-0 z-2 mt-2 me-3"
+                ></i>
+              </div>
+              <div class="list-group" id="searchResults"></div>
             </div>
-            <div class="list-group" id="searchResults"></div>
-          </div>
-        </header>
+          </header>
 
-        <!--INTRODUCTION-->
-        <section id="Introdução">
-          <div>
-            <h2>Introdução</h2>
-            <p class="styledText">
-              Bem-vindo a documentação do servidor
-              <strong class="strongText">Softex Labs</strong> Este documento
-              visa fornecer todas as informações necessárias para garantir uma
-              experiência agradável e organizada para todos os membros.
-            </p>
-            <p class="mb-4 styledText">
-              Além disso, aqui também será possível encontrar informações
-              sobre os atuais e principais projetos que estão rodando em nosso
-              servidor.
-            </p>
-            <div class="row row-cols-1 row-cols-sm-2 g-3 g-sm-4">
-              <div class="col">
-                <div class="card h-100 p-3 p-sm-3">
-                  <div
-                    class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3">
-
-                    <!--FAP ICON-->
-                    <i>
-                      <img width="50px" src="./assets/icons/SoftexB.webp" alt="">
-                    </i>
-
+          <!--INTRODUCTION-->
+          <section id="Introdução">
+            <div>
+              <h2>Introdução</h2>
+              <p class="styledText">
+                Bem-vindo a documentação do servidor
+                <strong class="strongText">Softex Labs</strong> Este documento
+                visa fornecer todas as informações necessárias para garantir uma
+                experiência agradável e organizada para todos os membros.
+              </p>
+              <p class="mb-4 styledText">
+                Além disso, aqui também será possível encontrar informações
+                sobre os atuais e principais projetos que estão rodando em nosso
+                servidor.
+              </p>
+              <div class="row row-cols-1 row-cols-sm-2 g-3 g-sm-4">
+                <div class="col">
+                  <div class="card h-100 p-3 p-sm-3">
+                    <div
+                      class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3"
+                    >
+                      <!--FAP ICON-->
+                      <i>
+                        <img
+                          width="50px"
+                          src="./assets/icons/SoftexB.webp"
+                          alt=""
+                        />
+                      </i>
+                    </div>
+                    <h4>FAP</h4>
+                    <p class="mb-0">
+                      Categoria voltada para o acompanhamento da
+                      <strong> Formação Acelerada em Programação </strong> e
+                      Residência.
+                    </p>
                   </div>
-                  <h4>FAP</h4>
-                  <p class="mb-0">Categoria voltada para o acompanhamento da <strong>
-                      Formação Acelerada em Programação
-                    </strong> e
-                    Residência.</p>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-3 p-sm-3">
-                  <div
-                    class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3">
-
-                    <!--EMM ICON-->
-                    <i>
-                      <img height="35px" src="./assets/icons/EMM.png" alt="">
-                    </i>
+                <div class="col">
+                  <div class="card h-100 p-3 p-sm-3">
+                    <div
+                      class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3"
+                    >
+                      <!--EMM ICON-->
+                      <i>
+                        <img
+                          height="35px"
+                          src="./assets/icons/EMM.png"
+                          alt=""
+                        />
+                      </i>
+                    </div>
+                    <h4>EMM</h4>
+                    <p class="mb-0">
+                      Categoria voltada para o acompanhamento das tarefas
+                      voltadas para a
+                      <strong>Estação de Monitoramento Modular</strong>.
+                    </p>
                   </div>
-                  <h4>EMM</h4>
-                  <p class="mb-0">Categoria voltada para o acompanhamento das tarefas voltadas para a <strong>Estação de
-                      Monitoramento Modular</strong>.</p>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-3 p-sm-3">
-                  <div
-                    class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3">
-
-                    <!--BOT ICON-->
-                    <i>
-                      <img height="30px" src="./assets/icons/discord.png" alt="">
-                    </i>
-
+                <div class="col">
+                  <div class="card h-100 p-3 p-sm-3">
+                    <div
+                      class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3"
+                    >
+                      <!--BOT ICON-->
+                      <i>
+                        <img
+                          height="30px"
+                          src="./assets/icons/discord.png"
+                          alt=""
+                        />
+                      </i>
+                    </div>
+                    <h4>BOTS</h4>
+                    <p class="mb-0">
+                      Sessão de configuração, documentação e desenvolvimento de
+                      Bots funcionais que no servior Softex Labs do
+                      <strong class="strongText">Softex Recife</strong>
+                    </p>
                   </div>
-                  <h4>BOTS</h4>
-                  <p class="mb-0">
-                    Sessão de configuração, documentação e desenvolvimento de Bots funcionais que
-                    no servior Softex Labs do <strong class="strongText">Softex Recife</strong>
-                  </p>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-3 p-sm-3">
-                  <div
-                    class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3">
-
-                    <!--BOLSITSTA ICON-->
-                    <i>
-                      <img height="35px" class="introductionIcons" src="./assets/icons/chemist.png" alt="">
-                    </i>
+                <div class="col">
+                  <div class="card h-100 p-3 p-sm-3">
+                    <div
+                      class="d-flex align-items-center justify-content-center bg-primary-subtle rounded-circle w-50px h-50px mb-3"
+                    >
+                      <!--BOLSITSTA ICON-->
+                      <i>
+                        <img
+                          height="35px"
+                          class="introductionIcons"
+                          src="./assets/icons/chemist.png"
+                          alt=""
+                        />
+                      </i>
+                    </div>
+                    <h4>BOL</h4>
+                    <p class="mb-0">
+                      Categoria voltada para acompanhamento dos Bolsistas do
+                      <strong class="strongText">Softex Labs</strong>.
+                    </p>
                   </div>
-                  <h4>BOL</h4>
-                  <p class="mb-0">
-                    Categoria voltada para acompanhamento dos Bolsistas do
-                    <strong class="strongText">Softex Labs</strong>.
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section id="Softex Labs">
-          <div>
-            <h2>Softex Labs</h2>
-            <p class="styledText">
-              Antes de começar, é importante saber que o servidor Discord Softex Labs está organizado em duas partes
-              principais: Categorias e Canais.
-            </p>
-          </div>
-          <div id="Categorias">
-            <h3>Categorias</h3>
-            <p>
-              <li class="lead mb-1"> São o nível mais alto na estrutura de organização do servidor Discord.</li>
-              <li class="lead mb-1"> Agrupam e organizam os canais relacionados dentro de um tema específico.</li>
-              <li class="lead mb-1"> Permitem uma divisão e facilitam a navegação para os membros do servidor.
-              </li>
-            </p>
-          </div>
+          <section id="Softex Labs">
+            <div>
+              <h2>Softex Labs</h2>
+              <p class="styledText">
+                Antes de começar, é importante saber que o servidor Discord
+                Softex Labs está organizado em duas partes principais:
+                Categorias e Canais.
+              </p>
+            </div>
+            <div id="Categorias">
+              <h3>Categorias</h3>
+              <p>
+                <li class="lead mb-1">
+                  São o nível mais alto na estrutura de organização do servidor
+                  Discord.
+                </li>
+                <li class="lead mb-1">
+                  Agrupam e organizam os canais relacionados dentro de um tema
+                  específico.
+                </li>
+                <li class="lead mb-1">
+                  Permitem uma divisão e facilitam a navegação para os membros
+                  do servidor.
+                </li>
+              </p>
+            </div>
 
-          <div id="Canais">
-            <h3>Canais</h3>
-            <p>
-              <li class="lead mb-1"> São encontrados dentro de categorias e são onde ocorrem as interações.
-              </li>
-              <li class="lead mb-1"> Podem ser textuais ou de voz e vídeo.</li>
-              <li class="lead mb-1"> Cada canal tem um propósito e também suas próprias regras e configurações.</li>
-            </p>
-          </div>
+            <div id="Canais">
+              <h3>Canais</h3>
+              <p>
+                <li class="lead mb-1">
+                  São encontrados dentro de categorias e são onde ocorrem as
+                  interações.
+                </li>
+                <li class="lead mb-1">Podem ser textuais ou de voz e vídeo.</li>
+                <li class="lead mb-1">
+                  Cada canal tem um propósito e também suas próprias regras e
+                  configurações.
+                </li>
+              </p>
+            </div>
 
-          <div id="Estrutura do Servidor">
-            <h2>Estrutura do Servidor</h2>
-            <p class="mb-4 styledText">
-              O servidor Softex Labs é uma plataforma robusta e organizada que suporta diversas atividades dentro da
-              Softex.
-              Com <strong>
-                mais de 20 categorias e mais de 150 canais disponíveis
-              </strong>, além de 111 cargos específicos, o
-              servidor é projetado para facilitar a comunicação e colaboração entre os membros da comunidade.
-            </p>
-            <p class="styledText">
-              Entre as categorias principais e mais ativas estão:
-            </p>
-            <ul>
+            <div id="Estrutura do Servidor">
+              <h2>Estrutura do Servidor</h2>
+              <p class="mb-4 styledText">
+                O servidor Softex Labs é uma plataforma robusta e organizada que
+                suporta diversas atividades dentro da Softex. Com
+                <strong>
+                  mais de 20 categorias e mais de 150 canais disponíveis além de
+                  111 cargos específicos,</strong
+                >
+                o servidor é projetado para facilitar a comunicação e
+                colaboração entre os membros da comunidade.
+              </p>
+              <div class="bgGradient">
+                <img
+                  class="img-fluid rounded-4"
+                  src="img/servergif.gif"
+                  alt="Browser mockup"
+                />
+              </div>
+              <br />
+              <p class="styledText">
+                Nosso sistema de canais é organizado de maneira a facilitar o
+                acesso às informações e recursos relevantes, promovendo uma
+                experiência eficiente e intuitiva para todos os usuários.
+              </p>
+              <br />
+              <div class="styledText">
+                <p>
+                  Em <strong>FAP</strong>, encontramos canais para discussões
+                  gerais, comunicação da equipe do FAP, turmas de frontend e
+                  backend (com canais de texto e voz), informações sobre
+                  residência, e arquivos de tópicos concluídos ou inativos. Esta
+                  categoria organiza todas as interações e informações
+                  relacionadas ao FAP.
+                </p>
+                <p>
+                  No <strong>Lobby</strong>, novos usuários passam pela
+                  verificação, recebem mensagens de boas-vindas e podem
+                  visualizar os logs de entrada e saída do servidor. Este espaço
+                  garante uma introdução organizada e acolhedora para todos os
+                  membros.
+                </p>
+                <p>
+                  <strong>EMM</strong> contém canais voltados para o
+                  desenvolvimento da Estação de Monitoramento Modular, incluindo
+                  subcanais para frontend, backend, hardware, stations e uma
+                  lista de tarefas. Esta categoria organiza detalhadamente todas
+                  as áreas do projeto EMM.
+                </p>
+                <p>
+                  A categoria <strong>Softex Labs</strong> é dedicada às
+                  divulgações de eventos, webinars, palestras e oficinas,
+                  mantendo todos informados sobre as principais atividades e
+                  oportunidades de aprendizado.
+                </p>
+                <p>
+                  A <strong>Lista de Tarefas</strong> é onde são designadas e
+                  organizadas as tarefas dos bolsistas, seja pelo coordenador ou
+                  pelos próprios membros, permitindo um acompanhamento claro do
+                  progresso das atividades.
+                </p>
+                <p>
+                  Na categoria <strong>Bolsistas</strong>, bolsistas de
+                  diferentes projetos podem se encontrar e colaborar, além de
+                  acessar uma lista de tarefas específica para suas atividades,
+                  facilitando a coordenação e execução dos projetos.
+                </p>
+                <p>
+                  Por fim, <strong>ADM</strong> abrange o acompanhamento dos
+                  alunos do FAP, comunicação com a secretaria, e discussões
+                  administrativas gerais, garantindo uma gestão eficiente e
+                  organizada do FAP.
+                </p>
+              </div>
+            </div>
+
+            <div id="Arquitetura de Categorias">
+              <h2>Arquitetura de Categorias</h2>
+              <p class="styledText">
+                Aqui está uma explicação mais detalhada de como se estrutura os
+                canais e as principais categorias do servidor.
+              </p>
+              <div class="card p-4 mb-3">
+                <!--Lobby Button-->
+                <button
+                  class="btn text-start border-0 w-100 p-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#folderDist"
+                  aria-expanded="true"
+                  aria-controls="folderDist"
+                >
+                  <i class="uil uil-folder text-primary fs-5"></i>
+                  Lobby
+                </button>
+                <div
+                  class="collapse show border-start ps-3 ms-2"
+                  id="folderDist"
+                >
+                  <!--Lobby Items-->
+                  <div class="w-100">
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Verificação
+                  </div>
+                  <div class="w-100">
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Boas Vindas
+                  </div>
+                  <div class="w-100">
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Geral
+                  </div>
+                  <div class="w-100">
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Entrada/Saída
+                  </div>
+                </div>
+
+                <!--Labs Button-->
+                <button
+                  class="btn text-start border-0 w-100 p-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#folderSrc"
+                  aria-expanded="true"
+                  aria-controls="folderSrc"
+                >
+                  <i class="uil uil-folder text-primary fs-5"></i>
+                  Softex Labs
+                </button>
+                <div>
+                  <div
+                    class="collapse show border-start ps-3 ms-2"
+                    id="folderSrc"
+                  >
+                    <!--Labs Items-->
+                    <div class="w-100">
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Informes e Divulgações
+                    </div>
+                    <div class="w-100">
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Labs Family
+                    </div>
+                  </div>
+                </div>
+
+                <!--FAP Button-->
+                <button
+                  class="btn text-start border-0 w-100 p-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#folderSrc2"
+                  aria-expanded="true"
+                  aria-controls="folderSrc2"
+                >
+                  <i class="uil uil-folder text-primary fs-5"></i>
+                  FAP
+                </button>
+                <div>
+                  <div
+                    class="collapse show border-start ps-3 ms-2"
+                    id="folderSrc2"
+                  >
+                    <!--FAP Items-->
+                    <div class="w-100">
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Geral
+                    </div>
+                    <div class="w-100">
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Residência
+                    </div>
+                    <div class="w-100">
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Frontend
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Backend
+                    </div>
+                    <div class="w-100">
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Fap 2023
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Fap 2024
+                    </div>
+                  </div>
               
-            </ul>
-            <div class="bgGradient">
-              <img class="img-fluid rounded-4" src="img/servergif.gif" alt="Browser mockup" />
-            </div>
-          </div>
-
-          <div id="Estrutura de Canais">
-            <h3>Estrutura de Canais</h3>
-            <p>
-              The <b>dist</b> folder contains the built files for production.
-              The <b>src</b> folder contains all of the source files. The
-              <b>design</b> folder contains the editable
-              <a href="https://www.sketch.com/">Sketch</a> file of the design.
-              Below you can see the structure of the main project folder:
-            </p>
-            <div class="card p-4 mb-3">
-              <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#folderDist" aria-expanded="true" aria-controls="folderDist">
-                <i class="uil uil-folder text-primary fs-5"></i>
-                dist
-              </button>
-              <div class="collapse show border-start ps-3 ms-2" id="folderDist">
-                <div class="w-100">
-                  <i class="uil uil-file-alt text-primary fs-5"></i>
-                  index.html
-                </div>
-                <div class="w-100">
-                  <i class="uil uil-file-alt text-primary fs-5"></i>
-                  styles.css
-                </div>
-              </div>
-              <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#folderSrc" aria-expanded="true" aria-controls="folderSrc">
-                <i class="uil uil-folder text-primary fs-5"></i>
-                src
-              </button>
-              <div class="collapse show border-start ps-3 ms-2" id="folderSrc">
-                <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#folderScss" aria-expanded="true" aria-controls="folderScss">
+                  <!--Bolsistas Button-->
+                  <button
+                  class="btn text-start border-0 w-100 p-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#folderSrc"
+                  aria-expanded="true"
+                  aria-controls="folderSrc"
+                >
                   <i class="uil uil-folder text-primary fs-5"></i>
-                  scss
+                  Bolsistas
                 </button>
-                <div class="collapse show border-start ps-3 ms-2" id="folderScss">
-                  <div class="w-100">
-                    <i class="uil uil-file-alt text-primary fs-5"></i>
-                    components.scss
-                  </div>
-                  <div class="w-100">
-                    <i class="uil uil-file-alt text-primary fs-5"></i>
-                    typography.scss
-                  </div>
-                  <div class="w-100">
-                    <i class="uil uil-file-alt text-primary fs-5"></i>
-                    styles.scss
+                <div>
+                  <div
+                    class="collapse show border-start ps-3 ms-2"
+                    id="folderSrc"
+                  >
+                    <!--Bolsistas Items-->
+                    <div class="w-100">
+                      <i class="uil uil-file-alt text-primary fs-5"></i>
+                      Tarefas
+                    </div>
                   </div>
                 </div>
-                <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#folderJs" aria-expanded="false" aria-controls="folderJs">
-                  <i class="uil uil-folder text-primary fs-5"></i>
-                  js
-                </button>
-                <div class="collapse border-start ps-3 ms-2" id="folderJs">
-                  <div class="w-100">
-                    <i class="uil uil-file-alt text-primary fs-5"></i>
-                    admin.js
-                  </div>
-                  <div class="w-100">
-                    <i class="uil uil-file-alt text-primary fs-5"></i>
-                    scripts.js
-                  </div>
+              
                 </div>
-              </div>
-              <button class="btn text-start border-0 w-100 p-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#folderDesign" aria-expanded="false" aria-controls="folderDesign">
+
+                <!--EMM Button-->
+                <button
+                class="btn text-start border-0 w-100 p-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#folderSrc"
+                aria-expanded="true"
+                aria-controls="folderSrc"
+              >
                 <i class="uil uil-folder text-primary fs-5"></i>
-                design
+                EMM
               </button>
-              <div class="collapse border-start ps-3 ms-2" id="folderDesign">
-                <div class="w-100">
-                  <i class="uil uil-file-alt text-primary fs-5"></i>
-                  layout.sketch
-                </div>
-                <div class="w-100">
-                  <i class="uil uil-file-alt text-primary fs-5"></i>
-                  logos.psd
+              <div>
+                <div
+                  class="collapse show border-start ps-3 ms-2"
+                  id="folderSrc"
+                >
+                  <!--EMM Items-->
+                  <div class="w-100">
+                  </div>
+                  <div class="w-100">
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Frontend
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Backend
+                  </div>
+                  <div class="w-100">
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Mobile
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    hardware
+                    <i class="uil uil-file-alt text-primary fs-5"></i>
+                    Stations
+                  </div>
                 </div>
               </div>
+
             </div>
-          </div>
 
-          <div id="Hirarquia de Cargos">
-            <h3>Hirarquia de Cargos</h3>
-            <p>
-              The following free resources were used along with this project:
-            </p>
-            <ul>
-              <li>
-                <a target="_blank" href="https://getbootstrap.com">Bootstrap</a>
-                - the latest version, Bootstrap 5 gives the base structure of
-                the template
-              </li>
-              <li>
-                <a target="_blank" href="https://vitejs.dev">Vite.js</a> - a
-                new generation frontend developer tooling
-              </li>
-              <li>
-                <a target="_blank" href="https://sass-lang.com">Sass</a> - the
-                most popular css preprocessor to write advanced styles
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com">GitHub</a> -
-                version controller tool, used to maintain the updates of the
-                project
-              </li>
-              <li>
-                <a target="_blank" href="https://iconscout.com/unicons">Unicons</a>
-                - a free collection of scaleable and colorable svg UI icons
-              </li>
-              <li>
-                <a target="_blank" href="https://prismjs.com">Prism.js</a> - a
-                javascript library for syntax highlighting code blocks
-              </li>
-            </ul>
-          </div>
+            <div id="Hirarquia de Cargos">
+              <h3>Hirarquia de Cargos</h3>
+              <p>
+                The following free resources were used along with this project:
+              </p>
+              <ul>
+                <li>
+                  <a target="_blank" href="https://getbootstrap.com"
+                    >Bootstrap</a
+                  >
+                  - the latest version, Bootstrap 5 gives the base structure of
+                  the template
+                </li>
+                <li>
+                  <a target="_blank" href="https://vitejs.dev">Vite.js</a> - a
+                  new generation frontend developer tooling
+                </li>
+                <li>
+                  <a target="_blank" href="https://sass-lang.com">Sass</a> - the
+                  most popular css preprocessor to write advanced styles
+                </li>
+                <li>
+                  <a target="_blank" href="https://github.com">GitHub</a> -
+                  version controller tool, used to maintain the updates of the
+                  project
+                </li>
+                <li>
+                  <a target="_blank" href="https://iconscout.com/unicons"
+                    >Unicons</a
+                  >
+                  - a free collection of scaleable and colorable svg UI icons
+                </li>
+                <li>
+                  <a target="_blank" href="https://prismjs.com">Prism.js</a> - a
+                  javascript library for syntax highlighting code blocks
+                </li>
+              </ul>
+            </div>
 
+            <div id="dependencies">
+              <h3>Dependencies</h3>
+              <p>
+                There are a few <b>npm</b> dependencies need to be installed
+                before serving the project:
+              </p>
+              <ul class="mb-5">
+                <li>
+                  <a target="_blank" href="https://popper.js.org">popperjs</a> -
+                  a positioning solution for tooltips and popovers
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://github.com/postcss/autoprefixer"
+                    >autoprefixer</a
+                  >
+                  - a postcss plugin that adds vendor prefixes to the output css
+                  files
+                </li>
+                <li>
+                  <a target="_blank" href="https://getbootstrap.com"
+                    >bootstrap</a
+                  >
+                  - latest version of Bootstrap, what is a powerful and
+                  extensible frontend toolkit
+                </li>
+                <li>
+                  <a target="_blank" href="https://postcss.org/">postcss</a> - a
+                  tool for transforming CSS with JavaScript (required for using
+                  autoprefixer)
+                </li>
+              </ul>
+              <p class="alert bg-primary-subtle text-primary" role="alert">
+                <b class="text-primary">Note:</b> to be able to install these
+                packages via npm, you need to have Node.js installed on your
+                system.
+              </p>
+            </div>
+          </section>
 
+          <section id="core-concepts">
+            <div>
+              <h2>Core concepts</h2>
+              <p class="lead">
+                And yet still further pondering while I jerked him now and then
+                from between the whale and ship, which would
+                <a href="#">threaten to jam</a> him still further pondering, I
+                say saw that this situation of mine was the precise situation.
+              </p>
+            </div>
 
-          <div id="dependencies">
-            <h3>Dependencies</h3>
-            <p>
-              There are a few <b>npm</b> dependencies need to be installed
-              before serving the project:
-            </p>
-            <ul class="mb-5">
-              <li>
-                <a target="_blank" href="https://popper.js.org">popperjs</a> -
-                a positioning solution for tooltips and popovers
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/postcss/autoprefixer">autoprefixer</a>
-                - a postcss plugin that adds vendor prefixes to the output css
-                files
-              </li>
-              <li>
-                <a target="_blank" href="https://getbootstrap.com">bootstrap</a>
-                - latest version of Bootstrap, what is a powerful and
-                extensible frontend toolkit
-              </li>
-              <li>
-                <a target="_blank" href="https://postcss.org/">postcss</a> - a
-                tool for transforming CSS with JavaScript (required for using
-                autoprefixer)
-              </li>
-            </ul>
-            <p class="alert bg-primary-subtle text-primary" role="alert">
-              <b class="text-primary">Note:</b> to be able to install these
-              packages via npm, you need to have Node.js installed on your
-              system.
-            </p>
-          </div>
-        </section>
-
-        <section id="core-concepts">
-          <div>
-            <h2>Core concepts</h2>
-            <p class="lead">
-              And yet still further pondering while I jerked him now and then
-              from between the whale and ship, which would
-              <a href="#">threaten to jam</a> him still further pondering, I
-              say saw that this situation of mine was the precise situation.
-            </p>
-          </div>
-
-          <div id="coding-rules">
-            <h3>Coding rules</h3>
-            <p>
-              True, you may say that, by exceeding caution, you may possibly
-              escape these and the multitudinous other evil chances of life.
-              But handle <a href="#">queequeg monkey-rope</a> heedfully as I
-              would, sometimes he jerked it so, that I came very near sliding
-              overboard.
-            </p>
-            <pre><code class="language-markup">&lt;section id=&quot;example&quot;&gt;
+            <div id="coding-rules">
+              <h3>Coding rules</h3>
+              <p>
+                True, you may say that, by exceeding caution, you may possibly
+                escape these and the multitudinous other evil chances of life.
+                But handle <a href="#">queequeg monkey-rope</a> heedfully as I
+                would, sometimes he jerked it so, that I came very near sliding
+                overboard.
+              </p>
+              <pre><code class="language-markup">&lt;section id=&quot;example&quot;&gt;
     &lt;div class=&quot;container&quot;&gt;
         &lt;h2&gt;My amazing title&lt;/h2&gt;
         &lt;p&gt;This is the description text&lt;/p&gt;
     &lt;/div&gt;
 &lt;/section&gt;</code></pre>
-            <p>
-              True, you may say that, by exceeding caution, you may possibly
-              escape these and the multitudinous other evil chances of life.
-              But handle Queequeg's monkey-rope heedfully as I would,
-              sometimes he jerked it so, that I came very near sliding
-              overboard.
-            </p>
-            <pre><code class="language-javascript">$('#settingsCompanyLogo').change(function() {
+              <p>
+                True, you may say that, by exceeding caution, you may possibly
+                escape these and the multitudinous other evil chances of life.
+                But handle Queequeg's monkey-rope heedfully as I would,
+                sometimes he jerked it so, that I came very near sliding
+                overboard.
+              </p>
+              <pre><code class="language-javascript">$('#settingsCompanyLogo').change(function() {
     let reader = new FileReader();
     reader.onload = (e) => { 
         $('#settingsCompanyLogoPreview').attr('src', e.target.result); 
     }
     reader.readAsDataURL(this.files[0]); 
 });</code></pre>
-          </div>
-
-          <div id="available-tags">
-            <h3>Available tags</h3>
-            <p>You can use these html5 tags to define your layout base:</p>
-            <div class="table-responsive">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">Tag</th>
-                    <th scope="col">Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <span class="badge bg-primary-subtle text-primary">html</span>
-                    </td>
-                    <td>Represents the root of an HTML document.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="badge bg-primary-subtle text-primary">article</span>
-                    </td>
-                    <td>It specifies independent, self-contained content.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="badge bg-primary-subtle text-primary">section</span>
-                    </td>
-                    <td>
-                      It defines a section in a document, similar as a content
-                      div.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="badge bg-primary-subtle text-primary">header</span>
-                    </td>
-                    <td>
-                      It represents a container for introductory content or a
-                      set of navigational links.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="badge bg-primary-subtle text-primary">footer</span>
-                    </td>
-                    <td>
-                      This tag defines a footer for a document or section.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
-          </div>
 
-          <div id="create-project">
-            <h3>Create project</h3>
-            <p>
-              Follow these steps to create a brand new project to your
-              portfolio:
-            </p>
-            <ol class="mb-4">
-              <li>If you are going to use a passage of Lorem Ipsum</li>
-              <li>
-                All the Lorem Ipsum generators on the Internet tend to repeat
-              </li>
-              <li>
-                It uses a dictionary of over 200 Latin words, combined with a
-                handful
-              </li>
-              <li>
-                In most cases, he, one way or other, has this with a plurality
-                of other mortals
-              </li>
-              <li>
-                If your banker breaks, you snap; if your apothecary by mistake
-                sends you poison
-              </li>
-            </ol>
-            <a class="btn btn-outline-primary" href="#integrations">Check out integrations</a>
-          </div>
-        </section>
-        <section id="advanced">
-          <div>
-            <h2>Advanced</h2>
-            <p class="lead">
-              Nor could I possibly forget that, do what I would, I only had
-              the management.
-            </p>
-          </div>
-
-          <div id="integrations">
-            <h3>Integrations</h3>
-            <p class="mb-4">
-              So strongly and metaphysically did I conceive of my situation
-              then, that while earnestly watching his motions, I seemed
-              distinctly to perceive that my own individuality was now merged
-              in a joint stock company of two; that my free will had received.
-            </p>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3 g-sm-4">
-              <div class="col">
-                <div class="card h-100 p-4">
-                  <img class="mb-4" src="img/sketch_logo.png" alt="Sketch" width="50" height="50" />
-                  <h4>Sketch</h4>
-                  <p class="small mb-0">
-                    Mac app for designers to create, team up, prototype, and
-                    more.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-4">
-                  <img class="mb-4" src="img/github_logo.avif" alt="GitHub" width="50" height="50" />
-                  <h4>GitHub</h4>
-                  <p class="small mb-0">
-                    GitHub is a code hosting platform for version control.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-4">
-                  <img class="mb-4" src="img/trello_logo.avif" alt="Trello" width="50" height="50" />
-                  <h4>Trello</h4>
-                  <p class="small mb-0">
-                    It empowers your team to manage any type of project.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-4">
-                  <img class="mb-4" src="img/slack_logo.avif" alt="Slack" width="50" height="50" />
-                  <h4>Slack</h4>
-                  <p class="small mb-0">
-                    Slack is a messaging app what brings people together.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-4">
-                  <img class="mb-4" src="img/todoist_logo.avif" alt="Todoist" width="50" height="50" />
-                  <h4>Todoist</h4>
-                  <p class="small mb-0">
-                    It keeps track of professional and personal projects.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 p-4">
-                  <img class="mb-4" src="img/google_drive_logo.avif" alt="Google Drive" width="50" height="50" />
-                  <h4>Google Drive</h4>
-                  <p class="small mb-0">
-                    It is a cloud-based storage service to access files
-                    online.
-                  </p>
-                </div>
+            <div id="available-tags">
+              <h3>Available tags</h3>
+              <p>You can use these html5 tags to define your layout base:</p>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Tag</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="badge bg-primary-subtle text-primary"
+                          >html</span
+                        >
+                      </td>
+                      <td>Represents the root of an HTML document.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge bg-primary-subtle text-primary"
+                          >article</span
+                        >
+                      </td>
+                      <td>It specifies independent, self-contained content.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge bg-primary-subtle text-primary"
+                          >section</span
+                        >
+                      </td>
+                      <td>
+                        It defines a section in a document, similar as a content
+                        div.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge bg-primary-subtle text-primary"
+                          >header</span
+                        >
+                      </td>
+                      <td>
+                        It represents a container for introductory content or a
+                        set of navigational links.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge bg-primary-subtle text-primary"
+                          >footer</span
+                        >
+                      </td>
+                      <td>
+                        This tag defines a footer for a document or section.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </div>
-        </section>
-        <footer class="d-flex justify-content-between align-items-center py-3">
-          <p class="small text-muted mb-0">
-            © Copyright 2023. All rights reserved.
-          </p>
-          <div class="d-flex">
-            <a class="lh-sm text-muted me-2" href="#" type="button">
-              <i class="uil uil-twitter fs-4"></i>
-            </a>
-            <a class="lh-sm text-muted me-2" href="#" type="button">
-              <i class="uil uil-dribbble fs-4"></i>
-            </a>
-            <a class="lh-sm text-muted" href="#" type="button">
-              <i class="uil uil-github fs-4"></i>
-            </a>
-          </div>
-        </footer>
-      </div>
 
-      <svg class="bg-gradient-bulb-right position-fixed end-0 bottom-0" width="540px" height="731px"
-        viewBox="0 0 540 731" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <rect id="path-_mk43jvm0v-1" x="0" y="0" width="540" height="731"></rect>
-          <radialGradient cx="50%" cy="53.2372883%" fx="50%" fy="53.2372883%" r="44.5431888%"
-            id="radialGradient-_mk43jvm0v-3">
-            <stop stop-color="#7C12F8" offset="0%"></stop>
-            <stop stop-color="#7C12F8" stop-opacity="0" offset="100%"></stop>
-          </radialGradient>
-        </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Desktop-HD" transform="translate(-900.000000, -294.000000)">
-            <g id="Oval" transform="translate(900.000000, 294.000000)">
-              <mask id="mask-_mk43jvm0v-2" fill="white">
-                <use xlink:href="#path-_mk43jvm0v-1"></use>
-              </mask>
-              <g id="Mask"></g>
-              <circle id="Oval-Copy" fill-opacity="0.14" fill="url(#radialGradient-_mk43jvm0v-3)"
-                mask="url(#mask-_mk43jvm0v-2)" cx="623.5" cy="622.5" r="470"></circle>
+            <div id="create-project">
+              <h3>Create project</h3>
+              <p>
+                Follow these steps to create a brand new project to your
+                portfolio:
+              </p>
+              <ol class="mb-4">
+                <li>If you are going to use a passage of Lorem Ipsum</li>
+                <li>
+                  All the Lorem Ipsum generators on the Internet tend to repeat
+                </li>
+                <li>
+                  It uses a dictionary of over 200 Latin words, combined with a
+                  handful
+                </li>
+                <li>
+                  In most cases, he, one way or other, has this with a plurality
+                  of other mortals
+                </li>
+                <li>
+                  If your banker breaks, you snap; if your apothecary by mistake
+                  sends you poison
+                </li>
+              </ol>
+              <a class="btn btn-outline-primary" href="#integrations"
+                >Check out integrations</a
+              >
+            </div>
+          </section>
+
+          <section id="advanced">
+            <div>
+              <h2>Advanced</h2>
+              <p class="lead">
+                Nor could I possibly forget that, do what I would, I only had
+                the management.
+              </p>
+            </div>
+
+            <div id="integrations">
+              <h3>Integrations</h3>
+              <p class="mb-4">
+                So strongly and metaphysically did I conceive of my situation
+                then, that while earnestly watching his motions, I seemed
+                distinctly to perceive that my own individuality was now merged
+                in a joint stock company of two; that my free will had received.
+              </p>
+              <div
+                class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3 g-sm-4"
+              >
+                <div class="col">
+                  <div class="card h-100 p-4">
+                    <img
+                      class="mb-4"
+                      src="img/sketch_logo.png"
+                      alt="Sketch"
+                      width="50"
+                      height="50"
+                    />
+                    <h4>Sketch</h4>
+                    <p class="small mb-0">
+                      Mac app for designers to create, team up, prototype, and
+                      more.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 p-4">
+                    <img
+                      class="mb-4"
+                      src="img/github_logo.avif"
+                      alt="GitHub"
+                      width="50"
+                      height="50"
+                    />
+                    <h4>GitHub</h4>
+                    <p class="small mb-0">
+                      GitHub is a code hosting platform for version control.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 p-4">
+                    <img
+                      class="mb-4"
+                      src="img/trello_logo.avif"
+                      alt="Trello"
+                      width="50"
+                      height="50"
+                    />
+                    <h4>Trello</h4>
+                    <p class="small mb-0">
+                      It empowers your team to manage any type of project.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 p-4">
+                    <img
+                      class="mb-4"
+                      src="img/slack_logo.avif"
+                      alt="Slack"
+                      width="50"
+                      height="50"
+                    />
+                    <h4>Slack</h4>
+                    <p class="small mb-0">
+                      Slack is a messaging app what brings people together.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 p-4">
+                    <img
+                      class="mb-4"
+                      src="img/todoist_logo.avif"
+                      alt="Todoist"
+                      width="50"
+                      height="50"
+                    />
+                    <h4>Todoist</h4>
+                    <p class="small mb-0">
+                      It keeps track of professional and personal projects.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 p-4">
+                    <img
+                      class="mb-4"
+                      src="img/google_drive_logo.avif"
+                      alt="Google Drive"
+                      width="50"
+                      height="50"
+                    />
+                    <h4>Google Drive</h4>
+                    <p class="small mb-0">
+                      It is a cloud-based storage service to access files
+                      online.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer
+            class="d-flex justify-content-between align-items-center py-3"
+          >
+            <p class="small text-muted mb-0">
+              © Copyright 2023. All rights reserved.
+            </p>
+            <div class="d-flex">
+              <a class="lh-sm text-muted me-2" href="#" type="button">
+                <i class="uil uil-twitter fs-4"></i>
+              </a>
+              <a class="lh-sm text-muted me-2" href="#" type="button">
+                <i class="uil uil-dribbble fs-4"></i>
+              </a>
+              <a class="lh-sm text-muted" href="#" type="button">
+                <i class="uil uil-github fs-4"></i>
+              </a>
+            </div>
+          </footer>
+        </div>
+
+        <svg
+          class="bg-gradient-bulb-right position-fixed end-0 bottom-0"
+          width="540px"
+          height="731px"
+          viewBox="0 0 540 731"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs>
+            <rect
+              id="path-_mk43jvm0v-1"
+              x="0"
+              y="0"
+              width="540"
+              height="731"
+            ></rect>
+            <radialGradient
+              cx="50%"
+              cy="53.2372883%"
+              fx="50%"
+              fy="53.2372883%"
+              r="44.5431888%"
+              id="radialGradient-_mk43jvm0v-3"
+            >
+              <stop stop-color="#7C12F8" offset="0%"></stop>
+              <stop stop-color="#7C12F8" stop-opacity="0" offset="100%"></stop>
+            </radialGradient>
+          </defs>
+          <g
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g id="Desktop-HD" transform="translate(-900.000000, -294.000000)">
+              <g id="Oval" transform="translate(900.000000, 294.000000)">
+                <mask id="mask-_mk43jvm0v-2" fill="white">
+                  <use xlink:href="#path-_mk43jvm0v-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <circle
+                  id="Oval-Copy"
+                  fill-opacity="0.14"
+                  fill="url(#radialGradient-_mk43jvm0v-3)"
+                  mask="url(#mask-_mk43jvm0v-2)"
+                  cx="623.5"
+                  cy="622.5"
+                  r="470"
+                ></circle>
+              </g>
             </g>
           </g>
-        </g>
-      </svg>
-    </main>
-  </div>
+        </svg>
+      </main>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
-  <script type="module" src="js/main.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

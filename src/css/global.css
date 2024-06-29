@@ -12,3 +12,15 @@
 .styledText {
   font-size: 20px;
 }
+
+.styledList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 17px;
+  padding: 0;
+}
+
+.styledList div {
+  margin: 12px 0;
+}
