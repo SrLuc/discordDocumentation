@@ -33,3 +33,33 @@ Bolsistas: Comunidade para bolsistas de diferentes projetos, com espaço dedicad
 Estação de Monitoramento Modular (EMM): Focado no desenvolvimento de frontend, backend, hardware, estações e gestão de tarefas específicas.
 
 ADM: Gestão administrativa relacionada ao acompanhamento dos alunos, secretaria e assuntos gerais administrativos do FAP.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+A hierarquia de cargos no Discord Softex Labs se dá dessa forma :
+
+Admin:
+
+Manager: São os responsáveis pelo gerenciamento do Projeto Softex Labs podem ver, gerenciar canais, cargos, criar convites, criar e alterar apelidos, expulsar membros, mandar mensagens.
+
+Discorder: tem a permissão de administrador, pois são responsáveis pelo desenvolvimento de Bots Funcionais dentro do próprio servidor.
+
+Bolsistas SoftexLabs : são bolsistas que fazem parte do programa, podem ver os canais, mas não podem gerencia-los, ficam apenas com principais funções de comunicação mas não pode gerenciar um servidor.
+
+O mesmo vale para os cargos, Bolsistas Robótica e IOT.
+
+
+FAP RECIFE: são cargos que são dados para os professores da Formação Acelerada em Programação.
+
+EMM: Cargo esse dado para os bolsistas que também fazem parte da Estação de monitoramento modular, este cargo te da as mesmas permissões que os bolsitas softexlabs, porem dentro da categoria EMM.
+
+Fap Equipe: esta cargo é designado para a equipe que compõe o FAP, tanto em questões secretárias como administrativas, psicológicas e pedagógicas.
+
+Residente: cargo dado para alunos que conseguiram fazer parte do programa de residência do FAP.
+
+Turmas: este cargo é dado para os alunos que fazem parte de alguma turma do Fap, seja frontend ou backend.
+
+Recém-chegado: este cargo é dado para a pessoa que acessa o softex labs pela primeira vez e ainda não fez a verificação para receber os cargos apropriados.
+
+Bot: o cargo de bot é dado apenas para os bots, isso inclui os próprios bots do discord como também os bots desenvolvidos pela equipe de desenvolvimento de Bots funcionais.

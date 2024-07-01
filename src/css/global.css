@@ -13,6 +13,11 @@
   font-size: 20px;
 }
 
+.styledTextItem {
+  font-size: 19px;
+
+}
+
 .styledList {
   display: flex;
   flex-direction: column;
